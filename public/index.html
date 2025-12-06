@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DevConnect Social - Developer Dashboard</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>DevConnect</h1>
+    <div id="user-info">Not logged in</div>
+  </header>
+
+  <main class="layout">
+    <section class="sidebar">
+      <h2>Account</h2>
+      <div id="auth-forms">
+        <div class="card">
+          <h3>Login</h3>
+          <input id="login-email" type="email" placeholder="Email" />
+          <input id="login-password" type="password" placeholder="Password" />
+          <button id="login-btn">Login</button>
+        </div>
+
+        <div class="card">
+          <h3>Register</h3>
+          <input id="reg-name" type="text" placeholder="Name" />
+          <input id="reg-email" type="email" placeholder="Email" />
+          <input id="reg-password" type="password" placeholder="Password" />
+          <input id="reg-bio" type="text" placeholder="Bio (optional)" />
+          <input id="reg-skills" type="text" placeholder="Skills (comma separated)" />
+          <button id="register-btn">Register</button>
+        </div>
+      </div>
+
+      <button id="logout-btn" class="hidden">Logout</button>
+    </section>
+
+    <section class="content">
+      <div class="card">
+        <h2>Create Project Post</h2>
+        <input id="post-title" type="text" placeholder="Project title" />
+        <textarea id="post-description" placeholder="Describe your project"></textarea>
+        <input id="post-tech" type="text" placeholder="Tech stack (comma separated)" />
+        <input id="post-github" type="text" placeholder="GitHub link (optional)" />
+        <input id="post-live" type="text" placeholder="Live demo link (optional)" />
+        <button id="create-post-btn">Post</button>
+      </div>
+
+      <div class="card">
+        <div class="feed-header">
+          <h2>Community Feed</h2>
+          <input id="search-input" type="text" placeholder="Search by title or tech..." />
+        </div>
+        <div id="posts-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
