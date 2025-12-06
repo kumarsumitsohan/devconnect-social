@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DevConnect Social
 
 A social media dashboard for developers to share projects, like, comment, and connect.  
@@ -17,3 +18,7 @@ The app will be available at your Vercel URL, for example:
 
 - Frontend: `https://your-app.vercel.app/`
 - API: `https://your-app.vercel.app/api/posts`
+=======
+# devconnect-social
+A social media dashboard for developers to share projects, like posts, comment, and connect — built with Node.js, Express, MongoDB, and a modern HTML/CSS/JS frontend.
+>>>>>>> 186d9ca03ebad257b5671824d7de89a7b6a5f70d
